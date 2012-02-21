@@ -53,15 +53,15 @@
 
 /* Begin PBXFileReference section */
 		9B3FF51114F0BD5B008F7ED3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		9B3FF56A14F0BF35008F7ED3 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		9B3FF56B14F0BF35008F7ED3 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		9B3FF56A14F0BF35008F7ED3 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = ../Reachability.h; sourceTree = "<group>"; };
+		9B3FF56B14F0BF35008F7ED3 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = ../Reachability.m; sourceTree = "<group>"; };
 		9B5415FF14F07479008C51E5 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		9B54161C14F097B6008C51E5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		9BA6054714F13D8E00AE42D2 /* NSDate+Formatting.h */ = {isa = PBXFileReference; fileEncoding = 4; path = "NSDate+Formatting.h"; sourceTree = "<group>"; };
-		9BA6054814F13D8E00AE42D2 /* NSDate+Formatting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Formatting.m"; sourceTree = "<group>"; };
+		9BA6054714F13D8E00AE42D2 /* NSDate+Formatting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+Formatting.h"; path = "../NSDate+Formatting.h"; sourceTree = "<group>"; };
+		9BA6054814F13D8E00AE42D2 /* NSDate+Formatting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Formatting.m"; path = "../NSDate+Formatting.m"; sourceTree = "<group>"; };
 		9BF77F2614F0BBFF00F8CC56 /* NSURLConnectionWithTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLConnectionWithTag.h; sourceTree = "<group>"; };
 		9BF77F2714F0BBFF00F8CC56 /* NSURLConnectionWithTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLConnectionWithTag.m; sourceTree = "<group>"; };
-		B432CFB114EFE6E60048AE1B /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B432CFB114EFE6E60048AE1B /* Forever Alone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Forever Alone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B432CFB514EFE6E60048AE1B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B432CFB714EFE6E60048AE1B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B432CFB914EFE6E60048AE1B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -137,16 +137,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22DC1F9214F4040500F0FEBE /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				9B3FF56A14F0BF35008F7ED3 /* Reachability.h */,
+				9B3FF56B14F0BF35008F7ED3 /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
 		B432CFA614EFE6E60048AE1B = {
 			isa = PBXGroup;
 			children = (
-				9BA6054714F13D8E00AE42D2 /* NSDate+Formatting.h */,
-				9BA6054814F13D8E00AE42D2 /* NSDate+Formatting.m */,
-				9B3FF56A14F0BF35008F7ED3 /* Reachability.h */,
-				9B3FF56B14F0BF35008F7ED3 /* Reachability.m */,
-				9B3FF51114F0BD5B008F7ED3 /* SystemConfiguration.framework */,
-				9B54161C14F097B6008C51E5 /* CoreLocation.framework */,
-				B432D01B14F00CAE0048AE1B /* MapKit.framework */,
 				B432CFBB14EFE6E60048AE1B /* TestApp */,
 				B432CFD914EFE6E60048AE1B /* TestAppTests */,
 				B432CFB414EFE6E60048AE1B /* Frameworks */,
@@ -157,7 +159,7 @@
 		B432CFB214EFE6E60048AE1B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B432CFB114EFE6E60048AE1B /* TestApp.app */,
+				B432CFB114EFE6E60048AE1B /* Forever Alone.app */,
 				B432CFD214EFE6E60048AE1B /* TestAppTests.octest */,
 			);
 			name = Products;
@@ -166,6 +168,9 @@
 		B432CFB414EFE6E60048AE1B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9B3FF51114F0BD5B008F7ED3 /* SystemConfiguration.framework */,
+				9B54161C14F097B6008C51E5 /* CoreLocation.framework */,
+				B432D01B14F00CAE0048AE1B /* MapKit.framework */,
 				9B5415FF14F07479008C51E5 /* Parse.framework */,
 				B432CFB514EFE6E60048AE1B /* UIKit.framework */,
 				B432CFB714EFE6E60048AE1B /* Foundation.framework */,
@@ -178,13 +183,16 @@
 		B432CFBB14EFE6E60048AE1B /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				22DC1F9214F4040500F0FEBE /* Reachability */,
+				B432CFBC14EFE6E60048AE1B /* Supporting Files */,
 				B432D01A14EFF16D0048AE1B /* JSON */,
+				9BA6054714F13D8E00AE42D2 /* NSDate+Formatting.h */,
+				9BA6054814F13D8E00AE42D2 /* NSDate+Formatting.m */,
 				B432CFC414EFE6E60048AE1B /* PMAppDelegate.h */,
 				B432CFC514EFE6E60048AE1B /* PMAppDelegate.m */,
 				B432CFC714EFE6E60048AE1B /* MainStoryboard.storyboard */,
 				B432CFCA14EFE6E60048AE1B /* PMViewController.h */,
 				B432CFCB14EFE6E60048AE1B /* PMViewController.m */,
-				B432CFBC14EFE6E60048AE1B /* Supporting Files */,
 				B432CFEA14EFE79A0048AE1B /* FoursquareAnnotation.h */,
 				B432CFEB14EFE79A0048AE1B /* FoursquareAnnotation.m */,
 				9BF77F2614F0BBFF00F8CC56 /* NSURLConnectionWithTag.h */,
@@ -258,9 +266,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B432CFB014EFE6E60048AE1B /* TestApp */ = {
+		B432CFB014EFE6E60048AE1B /* ForeverAlone */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B432CFE414EFE6E60048AE1B /* Build configuration list for PBXNativeTarget "TestApp" */;
+			buildConfigurationList = B432CFE414EFE6E60048AE1B /* Build configuration list for PBXNativeTarget "ForeverAlone" */;
 			buildPhases = (
 				B432CFAD14EFE6E60048AE1B /* Sources */,
 				B432CFAE14EFE6E60048AE1B /* Frameworks */,
@@ -270,14 +278,14 @@
 			);
 			dependencies = (
 			);
-			name = TestApp;
+			name = ForeverAlone;
 			productName = TestApp;
-			productReference = B432CFB114EFE6E60048AE1B /* TestApp.app */;
+			productReference = B432CFB114EFE6E60048AE1B /* Forever Alone.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B432CFD114EFE6E60048AE1B /* TestAppTests */ = {
+		B432CFD114EFE6E60048AE1B /* ForeverAloneTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B432CFE714EFE6E60048AE1B /* Build configuration list for PBXNativeTarget "TestAppTests" */;
+			buildConfigurationList = B432CFE714EFE6E60048AE1B /* Build configuration list for PBXNativeTarget "ForeverAloneTests" */;
 			buildPhases = (
 				B432CFCD14EFE6E60048AE1B /* Sources */,
 				B432CFCE14EFE6E60048AE1B /* Frameworks */,
@@ -289,7 +297,7 @@
 			dependencies = (
 				B432CFD814EFE6E60048AE1B /* PBXTargetDependency */,
 			);
-			name = TestAppTests;
+			name = ForeverAloneTests;
 			productName = TestAppTests;
 			productReference = B432CFD214EFE6E60048AE1B /* TestAppTests.octest */;
 			productType = "com.apple.product-type.bundle";
@@ -315,8 +323,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B432CFB014EFE6E60048AE1B /* TestApp */,
-				B432CFD114EFE6E60048AE1B /* TestAppTests */,
+				B432CFB014EFE6E60048AE1B /* ForeverAlone */,
+				B432CFD114EFE6E60048AE1B /* ForeverAloneTests */,
 			);
 		};
 /* End PBXProject section */
@@ -397,7 +405,7 @@
 /* Begin PBXTargetDependency section */
 		B432CFD814EFE6E60048AE1B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B432CFB014EFE6E60048AE1B /* TestApp */;
+			target = B432CFB014EFE6E60048AE1B /* ForeverAlone */;
 			targetProxy = B432CFD714EFE6E60048AE1B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -486,7 +494,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestApp/TestApp-Prefix.pch";
 				INFOPLIST_FILE = "TestApp/TestApp-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Forever Alone";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -503,7 +511,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestApp/TestApp-Prefix.pch";
 				INFOPLIST_FILE = "TestApp/TestApp-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Forever Alone";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -555,7 +563,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B432CFE414EFE6E60048AE1B /* Build configuration list for PBXNativeTarget "TestApp" */ = {
+		B432CFE414EFE6E60048AE1B /* Build configuration list for PBXNativeTarget "ForeverAlone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B432CFE514EFE6E60048AE1B /* Debug */,
@@ -564,7 +572,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B432CFE714EFE6E60048AE1B /* Build configuration list for PBXNativeTarget "TestAppTests" */ = {
+		B432CFE714EFE6E60048AE1B /* Build configuration list for PBXNativeTarget "ForeverAloneTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B432CFE814EFE6E60048AE1B /* Debug */,
